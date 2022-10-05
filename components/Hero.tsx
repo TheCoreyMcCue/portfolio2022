@@ -1,11 +1,27 @@
-import React from 'react'
+import React from 'react';
 
-type Props = {}
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
+
+type Props = {};
 
 function Hero({}: Props) {
-  return (
-    <div>Hero</div>
-  )
+	const [text, count] = useTypewriter({
+		words: [
+			"Hey, I'm Corey McCue",
+			'Lover-of-Chess.tsx',
+			'<LovesCodingMore />',
+		],
+		loop: true,
+		delaySpeed: 2000,
+	});
+	return (
+		<div>
+			<h1>
+				<span>{text}</span>
+				<Cursor cursorColor='green' />
+			</h1>
+		</div>
+	);
 }
 
-export default Hero
+export default Hero;
