@@ -34,17 +34,17 @@ function Header({}: Props) {
 				<SocialIcon
 					className='mx-2'
 					target='_blank'
-					// fgColor='white'
-					// bgColor='gray'
-					url='https://www.linkedin.com/in/corey-mccue-80949875/'
+					fgColor='white'
+					bgColor='gray'
+					url='https://github.com/TheCoreyMcCue'
 				/>
-				<SocialIcon
+				{/* <SocialIcon
 					className='mx-2'
 					target='_blank'
 					// fgColor='white'
 					// bgColor='gray'
 					url='https://www.linkedin.com/in/corey-mccue-80949875/'
-				/>
+				/> */}
 			</motion.div>
 			<motion.div
 				className='flex flex-row items-center'
