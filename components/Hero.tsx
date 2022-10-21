@@ -21,16 +21,19 @@ function Hero({}: Props) {
 		<div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
 			<BackgroundCircles />
 			<Image
-				className='relative rounded-full h-12 w-12 mx-auto'
+				className='relative rounded-full h-12 w-12 object-cover mx-auto'
 				src={avatar}
 				alt='Picture of the Corey'
 				height={175}
 				width={175}
 			/>
-			<h1>
-				<span>{text}</span>
-				<Cursor cursorColor='green' />
-			</h1>
+			<div>
+				<h2 className='text-sm uppercase'>Sales Engineer / Software Engineer</h2>
+				<h1>
+					<span>{text}</span>
+					<Cursor cursorColor='green' />
+				</h1>
+			</div>
 		</div>
 	);
 }
